@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑮𝒂𝒍𝒍𝒆𝒓𝒚</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #715D4C;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color:#E6CBA8;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 2px solid #add8e6;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #f0f8ff;
+        }
+        nav {
+            background-color: #C19A6B;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 5px 10px;
+            text-decoration: none;
+            color: #f0f8ff;
+            border-radius: 25px;
+            background-color: #C19A6B;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: b5775e;
+            transform: scale(1.1);
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease-in-out;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        main {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item video {
+            border-bottom: 2px solid #ddd;
+        }
+        .audio-container {
+            padding: 10px;
+            background-color: #f8f8f8;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        audio {
+            width: 100%;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: #4682b4;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #4682b4;
+        }
+        footer {
+            background-color: #a87e6d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #add8e6;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .sidebar {
+                width: 100%;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 100;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑮𝒂𝒍𝒍𝒆𝒓𝒚</h1>
+        <p>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑶𝒖𝒓 𝑷𝒂𝒈𝒆!!</p>
+    </header>
+
+    <nav>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Lush%20&%20Light%20Web.html" onclick="showWelcome()">𝑯𝒐𝒎𝒆</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Aboutus.html">𝑨𝒃𝒐𝒖𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/WEBCONTACT.html">𝑪𝒐𝒏𝒕𝒂𝒄𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Dashboard.html">𝑫𝒂𝒔𝒉𝒃𝒐𝒂𝒓𝒅</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Gallery.html">𝑮𝒂𝒍𝒍𝒆𝒓𝒚</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Models.html">𝑴𝒐𝒅𝒆𝒍𝒔</a>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <!-- 4 Photos -->
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/e5/47/e0/e547e043f74468e9d7c1aa33f40387e5.jpg" alt="Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/b1/04/a1/b104a1d08103d3649cdb3043fdab6fc9.jpg" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/28/11/b1/2811b1359f8274024d64f5f296fdff9b.jpg" alt="Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/0d/d8/63/0dd86307b5e3c29beaeedc2dbddfce63.jpg" alt="Photo 4">
+            </div>
+
+            <!-- 4 Videos with Audio Controls -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://videos.pexels.com/video-files/3181592/3181592-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="audio1.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://videos.pexels.com/video-files/3181733/3181733-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="audio2.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://videos.pexels.com/video-files/6778855/6778855-uhd_2732_1440_24fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="audio3.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="https://videos.pexels.com/video-files/5743177/5743177-sd_960_506_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="audio4.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

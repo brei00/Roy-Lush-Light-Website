@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑪𝒐𝒏𝒕𝒂𝒄𝒕</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #D9C6A1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #D9C6A1;
+      color: #333;
+      padding: 50px 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    header h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #B78C57;
+      padding: 15px 0;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 10px 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 8px 10px;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: beige;
+      background-color: transparent;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: white;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+      width: 100%;
+    }
+
+    .form-container {
+      background-color: #E6CBA8;
+      border-radius: 10px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #715D4C;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: #715D4C;
+      margin-top: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    textarea:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      box-shadow: 0 0 0 3px rgba(142, 111, 96, 0.4);
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background-color: #8E6F60;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #715D4C;
+      transform: scale(1.02);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .map-container:hover {
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background-color: #E6CBA8;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 30px 20px;
+      }
+
+      .map-container {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕</h1>
+    <p>𝑨 𝒔𝒆𝒓𝒆𝒏𝒆 𝒂𝒏𝒅 𝒔𝒕𝒚𝒍𝒊𝒔𝒉 𝒅𝒊𝒈𝒊𝒕𝒂𝒍 𝒔𝒑𝒂𝒄𝒆 𝒕𝒉𝒂𝒕 𝒃𝒍𝒆𝒏𝒅𝒔 𝒆𝒇𝒇𝒐𝒓𝒕𝒍𝒆𝒔𝒔 𝒆𝒍𝒆𝒈𝒂𝒏𝒄𝒆 𝒘𝒊𝒕𝒉 𝒂 𝒇𝒓𝒆𝒔𝒉, 𝒂𝒊𝒓𝒚 𝒂𝒆𝒔𝒕𝒉𝒆𝒕𝒊𝒄...</p>
+  </header>
+
+  <nav>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Lush%20&%20Light%20Web.html" onclick="showWelcome()">𝑯𝒐𝒎𝒆</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Aboutus.html">𝑨𝒃𝒐𝒖𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/WEBCONTACT.html">𝑪𝒐𝒏𝒕𝒂𝒄𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Dashboard.html">𝑫𝒂𝒔𝒉𝒃𝒐𝒂𝒓𝒅</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Gallery.html">𝑮𝒂𝒍𝒍𝒆𝒓𝒚</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Models.html">𝑴𝒐𝒅𝒆𝒍𝒔</a>
+  </nav>
+
+  <div class="main-content">
+    <div class="form-container">
+      <h2>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑪𝒐𝒏𝒕𝒂𝒄𝒕</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">𝑺𝒖𝒃𝒎𝒊𝒕→</button>
+      </form>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930385.1249262227!2d120.5794439690897!3d13.41250123174865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c856443e2b4f%3A0x6fb9e5dbce96a2f2!2sPhilippines!5e0!3m2!1sen!2sph!4v1715211702027"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Lush & Light. All rights reserved.
+  </footer>
+</body>
+</html>

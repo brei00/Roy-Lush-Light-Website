@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑴𝒐𝒅𝒆𝒍𝒔</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d2b48c;
+      color: #333;
+    }
+
+    
+    .banner {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #333;
+    }
+
+    .banner p {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #c49b66;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffe4c4;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    
+    .news-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .news-section h2 {
+      color: #b8860b;
+      margin-bottom: 30px;
+    }
+
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .news-box {
+      border: 2px solid #deb887;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      background-color: #fff8dc;
+      box-shadow: 0 0 10px #deb887;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(222, 184, 135, 0.5);
+    }
+
+    .news-box h3 {
+      color: #b8860b;
+      margin-bottom: 10px;
+    }
+
+    .news-box p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .news-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .news-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <div class="banner">
+    <h1>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑴𝒐𝒅𝒆𝒍𝒔</h1>
+    <p>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒈𝒐 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 𝒇𝒐𝒓 𝒂𝒍𝒍 𝒕𝒉𝒊𝒏𝒈𝒔 𝒇𝒂𝒔𝒉𝒊𝒐𝒏, 𝒃𝒆𝒂𝒖𝒕𝒚, 𝒂𝒏𝒅 𝒆𝒍𝒆𝒈𝒂𝒏𝒄𝒆!</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Lush%20&%20Light%20Web.html" onclick="showWelcome()">𝑯𝒐𝒎𝒆</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Aboutus.html">𝑨𝒃𝒐𝒖𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/WEBCONTACT.html">𝑪𝒐𝒏𝒕𝒂𝒄𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Dashboard.html">𝑫𝒂𝒔𝒉𝒃𝒐𝒂𝒓𝒅</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Gallery.html">𝑮𝒂𝒍𝒍𝒆𝒓𝒚</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Models.html">𝑴𝒐𝒅𝒆𝒍𝒔</a>
+  </nav>
+
+  <!-- Tesla News Section -->
+  <div class="news-section">
+    <h2>𝑳𝒂𝒕𝒆𝒔𝒕 𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕</h2>
+    <div class="news-container">
+      <div class="news-box">
+        <h3>Skin-Centric and Long-Wear Innovations</h3>
+        <p>As temperatures rise, long-wear and breathable makeup are essential. Sali Hughes highlights products like Milk’s Hydro Grip Gel Tint and Maybelline’s Super Stay 24h Skin Tint for their durability and natural finish. </p>
+      </div>
+      <div class="news-box">
+        <h3>Nostalgic Revival</h3>
+        <p>There’s a strong nostalgic revival of ’90s and early 2000s fashion, with low-rise jeans, cargo pants, cropped cardigans, and rhinestone details making a comeback.</p>
+      </div>
+      <div class="news-box">
+        <h3>Snore Core</h3>
+        <p>A minimalist style is trending, focusing on relaxed, neutral-toned pieces like loose khaki jeans and simple tops paired with understated accessories.</p>
+      </div>
+      <div class="news-box">
+        <h3>K-Beauty's Influence "Butter Skin"</h3>
+        <p>Korean beauty trends are shaping summer makeup with a focus on natural, multi-functional, and expressive looks. The "butter skin" trend emphasizes a smooth, satiny complexion, moving away from glossy finishes.</p>
+      </div>
+      <div class="news-box">
+        <h3>Innovative Product Formats</h3>
+        <p>Waterless and concentrated skincare products are emerging as sustainable alternatives. These formulations, including solid cleansers and powdered masks, reduce water usage and packaging waste while delivering potent active ingredients.</p>
+      </div>
+      <div class="news-box">
+        <h3>Sculptural and Statement Pieces</h3>
+        <p>Bold, sculptural jewelry is making waves in 2025. Think oversized earrings, chunky rings, and dramatic cuffs that serve as focal points of an outfit. These pieces are perfect for those looking to make a strong style statement.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

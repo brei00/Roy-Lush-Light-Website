@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 𝑾𝒆𝒃𝒔𝒊𝒕𝒆</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F1;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #D9C6A1;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: white;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #C19A6B;
+      padding: 15px 0;
+      border-bottom: 2px solid #D9B38C;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 10px 15px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: #D9C6A1;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #D9C6A1;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .blog-posts {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .post h2 {
+      font-size: 1.8rem;
+      color: #C19A6B;
+    }
+
+    .post p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .post a {
+      color: #C19A6B;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .post a:hover {
+      color: #D9C6A1;
+    }
+
+    footer {
+      background-color: #C19A6B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px 25px;
+      background-color: #D9C6A1;
+      color: white;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+    }
+
+    .floating-btn:hover {
+      background-color: #C19A6B;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .floating-btn:focus {
+      outline: none;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .blog-posts,
+      .sidebar {
+        margin: 0;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>𝑳𝒖𝒔𝒉 & 𝑳𝒊𝒈𝒉𝒕 </h1>
+    <p>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖𝒓 𝒈𝒐-𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 𝒇𝒐𝒓 𝒂𝒍𝒍 𝒕𝒉𝒊𝒏𝒈𝒔 𝒇𝒂𝒔𝒉𝒊𝒐𝒏, 𝒃𝒆𝒂𝒖𝒕𝒚, 𝒂𝒏𝒅 𝒆𝒍𝒆𝒈𝒂𝒏𝒄𝒆!</p>
+  </header>
+
+  <nav>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Lush%20&%20Light%20Web.html" onclick="showWelcome()">𝑯𝒐𝒎𝒆</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Aboutus.html">𝑨𝒃𝒐𝒖𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/WEBCONTACT.html">𝑪𝒐𝒏𝒕𝒂𝒄𝒕</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Dashboard.html">𝑫𝒂𝒔𝒉𝒃𝒐𝒂𝒓𝒅</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Gallery.html">𝑮𝒂𝒍𝒍𝒆𝒓𝒚</a>
+    <a href="file:///C:/Users/User/OneDrive%20-%20Allinone/Documents/Models.html">𝑴𝒐𝒅𝒆𝒍𝒔</a>
+  </nav>
+
+  <main>
+    <div class="blog-posts">
+      <div class="post">
+        <h2>Makeup Must-Haves in 2024</h2>
+        <p>Explore the best makeup products to enhance your natural beauty, including flawless foundations and bold lip tints.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="post">
+        <h2>Wardrobe Refresh: Chic Yet Simple</h2>
+        <p>Master the art of curating a capsule wardrobe that never goes out of style with these versatile clothing picks.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="post">
+        <h2>Jewelry Trends You Can't Miss</h2>
+        <p>From minimalist designs to statement pieces, discover the hottest jewelry trends of the year that will elevate your look.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>About Me</h2>
+      <p>Hello! I'm Breianne Lycah Roy, a beauty and fashion enthusiast who loves to share tips on makeup, styling, and accessorizing with jewelry.</p>
+
+      <h2>Something New!!</h2>
+      <p>Discover something new in the world of fashion and makeup with the latest trends that redefine style and self-expression. From bold beauty looks to fresh wardrobe essentials, elevate your vibe with what’s next in chic.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lush & Light. All rights reserved.</p>
+  </footer>
+
+  <button class="floating-btn">Follow</button>
+
+  <script>
+    function showWelcome() {
+      alert("Welcome to my website!");
+    }
+  </script>
+
+</body>
+</html>
